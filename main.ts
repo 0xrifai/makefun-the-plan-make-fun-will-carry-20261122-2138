@@ -1,13 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const PLAN =
-  "Day 1: spend $100 on a $12 domain + $88 AI tools. Sell $49 landing-page audits to small businesses. Days 2-7: DM 50 owners/day. Days 8-30: deliver 2/day, reinvest 100% profit into outreach + $5/day ads. Targets: $500 by day 14, $1,500 by day 30. Zero sales by day 10: price $29.";
+  "Day 1: $60 API credits, $15 domain, $25 ads. Build 3 paid tools (PDF merge, invoice maker, resume checker) at $9/mo. Days 4-7: post 2 demos daily on X and Reddit. Week 2-4: add 1 feature/week, reinvest revenue in $5/day ads, kill tools under $20/mo by day 14, back the winner.";
 
-// The bounty caps the plan at 280 characters; count Unicode code points
-// (not UTF-16 code units) so astral characters count as one each.
-const length = [...PLAN].length;
-if (length < 1 || length > 280) {
-  throw new Error(`Plan must be 1-280 code points, got ${length}`);
+// The plan must fit the 1-280 code point limit.
+if ([...PLAN].length < 1 || [...PLAN].length > 280) {
+  throw new Error(`PLAN must be 1-280 code points, got ${[...PLAN].length}`);
 }
 
 mkdirSync("/output", { recursive: true });

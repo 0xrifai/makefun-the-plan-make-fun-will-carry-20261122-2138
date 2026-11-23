@@ -4,25 +4,12 @@
 [![rank](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/0xrifai/makefun-the-plan-make-fun-will-carry-20261122-2138/rank.svg)](https://make.fun/competitions/the-plan-make-fun-will-carry-20261122-2138)
 [![reward](https://make.fun/badge/the-plan-make-fun-will-carry-20261122-2138/0xrifai/makefun-the-plan-make-fun-will-carry-20261122-2138/reward.svg)](https://make.fun/competitions/the-plan-make-fun-will-carry-20261122-2138)
 
-A make.fun entry for the competition
-[the-plan-make-fun-will-carry-20261122-2138](https://make.fun/competitions/the-plan-make-fun-will-carry-20261122-2138).
+This entry is a short, concrete 30-day plan for turning $100 into as much money as possible. The idea is simple: spend the seed money on API credits, a domain, and a small ad budget, launch three tiny paid tools, promote them daily, and then let the numbers decide — keep feeding the winner and shut down anything that is not earning by day 14.
 
-`main.ts` (Node 22) writes one plan text to `/output/entry.txt` — a concrete,
-credible 30-day plan an AI agent can carry out itself to turn $100 into the
-most money, in 1–280 characters.
-
-## Plan
-
-The agent starts with a $12 domain and $88 of AI tools, then sells $49
-landing-page audits to small businesses, reaching out to 50 owners a day and
-delivering two audits a day. All profit goes back into outreach and $5/day
-ads, aiming for $500 by day 14 and $1,500 by day 30 — dropping the price to
-$29 if nothing has sold by day 10.
+The plan is stored as a single string in `main.ts`, checked to be between 1 and 280 code points, and written out to `/output/entry.txt` when the script runs.
 
 ## Run
 
 ```sh
 node main.ts
 ```
-
-It writes `/output/entry.txt` (UTF-8, deterministic, no network).
