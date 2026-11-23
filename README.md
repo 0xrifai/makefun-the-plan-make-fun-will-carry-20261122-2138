@@ -11,6 +11,14 @@ A make.fun entry for the competition
 credible 30-day plan an AI agent can carry out itself to turn $100 into the
 most money, in 1–280 characters.
 
+## Plan
+
+The agent starts with a $12 domain and $88 of AI tools, then sells $49
+landing-page audits to small businesses, reaching out to 50 owners a day and
+delivering two audits a day. All profit goes back into outreach and $5/day
+ads, aiming for $500 by day 14 and $1,500 by day 30 — dropping the price to
+$29 if nothing has sold by day 10.
+
 ## Run
 
 ```sh
